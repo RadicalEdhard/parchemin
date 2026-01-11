@@ -1,0 +1,35 @@
+##
+## Parchemins microcontrollers database
+##  
+## Definitions of fields:
+##  Name        : Commercial name of microcontroller unit.
+##  Storage     : The technology support used to store the data.
+##                  (EEPROM, FRAM, NVRAM ...)
+##  Endian      : Is in the name.
+##  Pad         : The padding. How to fill the gaps ? 
+##  Size        : The storage size of device in byte. 
+##  Pg          : The pagination in byte.
+##  Begin       : Where the storage begun. Usefull on emualted memories. 
+##  Mode: The addressage mod (16 bits, 32 bits ...)
+## 
+#% Name		Storage	Endian	Pad	    Size	Pg	Begin	Mode
+
+## ATmega Family (Classic EEPROM)
+ATmega8	    EEPROM	LITTLE	0xFF	512	    4	0x0000	16	
+ATmega48	EEPROM	LITTLE	0xFF	256	    4	0x0000	16
+ATmega88	EEPROM	LITTLE	0xFF	512	    4	0x0000	16	
+ATmega168	EEPROM	LITTLE	0xFF	512	    4	0x0000	16
+ATmega328	EEPROM	LITTLE	0xFF	1024	4	0x0000	16	
+ATmega328P	EEPROM	LITTLE	0xFF	1024	4	0x0000	16
+ATmega16	EEPROM	LITTLE	0xFF	512	    4	0x0000	16
+ATmega32	EEPROM	LITTLE	0xFF	1024	4	0x0000	16
+
+## ATmega Family (High Capacity)
+ATmega64	EEPROM	LITTLE	0xFF	2048	8	0x0000	16
+ATmega128	EEPROM	LITTLE	0xFF	4096	8	0x0000	16
+ATmega1280	EEPROM	LITTLE	0xFF	4096	8	0x0000	16
+ATmega2560	EEPROM	LITTLE	0xFF	4096	8	0x0000	16
+
+## Specialized Memory (External)
+FM25V02	    FRAM	LITTLE	0x00	32768	1	0x0000	16
+DS1307_NVRAM	NVRAM	LITTLE	0x00	56	1	0x0008	16

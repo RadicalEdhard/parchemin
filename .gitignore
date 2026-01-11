@@ -1,5 +1,29 @@
-# Object file
-*.o
+# --- GPRbuild / Ada Compilation Artifacts ---
+# Ignore the object directory entirely
+obj/
 
-# Ada Library Information
+# Ignore the binary output directory
+bin/
+
+# --- GNAT Specific files (if they end up outside obj/) ---
 *.ali
+*.o
+*.stderr
+*.stdout
+*.bexch
+b__*.ad[sb]
+
+# --- Editor / OS Backup files ---
+# Neovim / Vim swap files
+.*.swp
+.sw?
+# macOS DS_Store
+.DS_Store
+# Emacs backups
+*~
+\#*\#
+
+# --- Project Specific Exceptions ---
+# We keep the data folder, but you might want to ignore 
+# temporary databases if they are generated.
+# data/*.db.tmp
