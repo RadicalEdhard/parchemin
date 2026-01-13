@@ -15,13 +15,14 @@ namespace pollution.
 - **Rationale:** Reduces visual noise while clearly separating system calls from business logic.
 
 **Commons aliases**
+
 | package                   | alias |
 |:---                       |:---   |
 | Ada.Command\_Line         | ACL   |
 | Ada.Characters.Handling   | ACH   |
 | Ada.IO\_Exceptions        | IOE   |
 | Ada.Strings               | STR   |
-[ Ada.Strings.Fixed         | STF   |
+| Ada.Strings.Fixed         | STF   |
 | Ada.Strings.Maps          | MAP   |
 | Ada.Strings.Unbounded     | SUS   | 
 | Ada.Text\_IO              | TIO   |
@@ -39,7 +40,8 @@ namespace pollution.
 </p>
 
 Is an example for banner in specifications files (.ads)
-```
+
+````
 --------------------------------------------------------------------------------
 --  Procedure: Handle (Overriding)
 --
@@ -57,6 +59,7 @@ Is an example for banner in specifications files (.ads)
 ```
 and this for body files (.adb)
 ```
+s
 --------------------------------------------------------------------------------
 --  Procedure: Handle (Overriding)
 --------------------------------------------------------------------------------
