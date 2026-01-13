@@ -8,6 +8,28 @@ parchemin [options] <command> [ARGS]
 
 ## Tree
 
+```
+/parchemin
+├── src
+│   ├── commands
+│   │   ├── parchemin-commands.{ads|adb}
+│   │   └── parchemin-commands-{core-module}.{ads|adb}
+│   ├── core
+│   │   ├── encoders
+│   │   │   ├── parchemin-encoder.{ads|adb}
+│   │   │   └── parchemin-encoder.{format}.{ads|adb}
+│   │   ├── pachemin-specs.{ads|adb}specifications
+│   │   ├── parchemin-map.{ads|adb}
+│   │   ├── parchemin-check.{ads|adb}
+│   │   ├── parchemin-types.ads
+│   │   └── parchemin-utils.{ads|adb}
+│   ├── pachemin-cli.adb
+│   ├── parchemin-config.ads
+│   └── parchemin.ads
+└── data
+    └── mcus # microcontrollers database
+```
+
 ## Roadmad
 
 | task 																														|finished |
